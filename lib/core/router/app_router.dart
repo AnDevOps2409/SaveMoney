@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:savemoney/features/auth/domain/auth_provider.dart';
 import 'package:savemoney/features/auth/presentation/screens/login_screen.dart';
+import 'package:savemoney/features/auth/presentation/screens/splash_screen.dart';
 import 'package:savemoney/features/home/presentation/screens/home_screen.dart';
 import 'package:savemoney/features/transaction/presentation/screens/transactions_screen.dart';
 import 'package:savemoney/features/report/presentation/screens/reports_screen.dart';
@@ -20,21 +21,31 @@ final goRouterProvider = Provider<GoRouter>((ref) {
 
   return GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: '/home',
+    initialLocation: '/splash',
     // Auth guard
     redirect: (context, state) {
       final isLoading = authState.isLoading;
-      if (isLoading) return null; // Đang load auth state
+      final isOnSplash = state.matchedLocation == '/splash';
+
+      // Đang load auth state → chỉ cho ở splash
+      if (isLoading) return isOnSplash ? null : '/splash';
 
       final isLoggedIn = authState.valueOrNull != null;
       final isGoingToLogin = state.matchedLocation == '/login';
-      final isGoingToFamilySetup = state.matchedLocation == '/family-setup';
+
+      // Đã load xong: rời splash
+      if (isOnSplash) return isLoggedIn ? '/home' : '/login';
 
       if (!isLoggedIn && !isGoingToLogin) return '/login';
       if (isLoggedIn && isGoingToLogin) return '/home';
       return null;
     },
     routes: [
+      GoRoute(
+        path: '/splash',
+        name: 'splash',
+        builder: (context, state) => const SplashScreen(),
+      ),
       GoRoute(
         path: '/login',
         name: 'login',

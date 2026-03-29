@@ -27,19 +27,26 @@ class NotificationService {
     tz.setLocalLocation(tz.getLocation('Asia/Ho_Chi_Minh'));
 
     const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
+    // iOS: KHÔNG xin quyền trong initialize() để tránh block main thread lúc khởi động
     const iosSettings = DarwinInitializationSettings(
-      requestAlertPermission: true,
-      requestBadgePermission: true,
-      requestSoundPermission: true,
+      requestAlertPermission: false,
+      requestBadgePermission: false,
+      requestSoundPermission: false,
     );
 
     await _plugin.initialize(
       const InitializationSettings(android: androidSettings, iOS: iosSettings),
     );
 
+    // Android: xin quyền thông báo
     await _plugin
         .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()
         ?.requestNotificationsPermission();
+
+    // iOS: xin quyền riêng - không block app startup
+    _plugin
+        .resolvePlatformSpecificImplementation<IOSFlutterLocalNotificationsPlugin>()
+        ?.requestPermissions(alert: true, badge: true, sound: true);
   }
 
   // ===== Helper: đọc giờ/phút từ SharedPreferences =====
