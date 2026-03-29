@@ -69,7 +69,7 @@ class NotificationService {
     await _plugin.zonedSchedule(
       _dailyReminderID,
       '💰 SaveMoney',
-      'Bạn chưa nhập giao dịch hôm nay. Ghi lại trước khi quên nhé! 🐷',
+      '💰 Bạn chưa nhập giao dịch hôm nay. Ghi lại trước khi quên nhé! 💰',
       scheduled,
       const NotificationDetails(
         android: AndroidNotificationDetails(
