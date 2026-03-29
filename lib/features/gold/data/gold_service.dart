@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:http/http.dart' as http;
 import 'package:savemoney/core/services/gold_firebase_options.dart';
@@ -172,9 +173,13 @@ class GoldService {
     try {
       return Firebase.app(_goldAppName);
     } catch (_) {
+      // Chọn options đúng theo platform
+      final options = defaultTargetPlatform == TargetPlatform.iOS
+          ? GoldFirebaseOptions.ios   // iOS options (thêm sau khi register app trên Firebase)
+          : GoldFirebaseOptions.android;
       return Firebase.initializeApp(
         name: _goldAppName,
-        options: GoldFirebaseOptions.android,
+        options: options,
       );
     }
   }
