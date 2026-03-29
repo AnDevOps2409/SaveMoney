@@ -1,0 +1,68 @@
+name: savemoney
+description: "App quản lý chi tiêu cá nhân - Money Lover Clone"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Firebase
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.2
+  cloud_firestore: ^5.6.5
+  firebase_storage: ^12.4.5
+  google_sign_in: ^6.2.2
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # UI & Charts
+  fl_chart: ^0.70.2
+  shimmer: ^3.0.0
+  iconsax_flutter: 1.0.1
+  flutter_svg: ^2.0.10
+
+  # Utilities
+  intl: ^0.20.2
+  http: ^1.2.2
+  connectivity_plus: ^6.1.4
+  image_picker: ^1.1.2
+  shared_preferences: ^2.5.3
+  uuid: ^4.5.1
+
+  # Notifications
+  flutter_local_notifications: ^18.0.0
+  timezone: ^0.9.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  riverpod_generator: ^2.6.3
+  build_runner: ^2.4.14
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: 'assets/images/pig.png'
+  min_sdk_android: 21
+  background_color_android: '#1C1F2E'
+  web:
+    generate: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/

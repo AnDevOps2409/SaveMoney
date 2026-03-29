@@ -1,0 +1,143 @@
+<tr>
+                        <td colspan="2" rowspan="2" width="44%" class="text-center" style="font-size: 1.65em;">SẢN PHẨM</td>
+                    </tr>
+
+---ROW---
+
+<tr>
+                        <td class="text-center" width="14%">MUA LẺ<br /><i style="font-size: .65em;">(Đơn vị: Đồng/Chỉ)</i></td>
+                        <td class="text-center" width="14%">BÁN LẺ<br /><i style="font-size: .65em;">(Đơn vị: Đồng/Chỉ)</i></td>
+                        <!-- Thêm class buon-col vào hai tiêu đề này -->
+                        <td class="text-center buon-col" width="14%">MUA BUÔN<br /><i style="font-size: .65em;">(Đơn vị: Đồng/Chỉ)</i></td>
+                        <td class="text-center buon-col" width="14%">BÁN BUÔN<br /><i style="font-size: .65em;">(Đơn vị: Đồng/Chỉ)</i></td>
+                    </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/SJC.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">V&#224;ng miếng SJC</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">16,980,000</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">17,280,000</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/NPQ.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">Nhẫn tr&#242;n Ph&#250; Qu&#253; 999.9</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">16,960,000</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">17,260,000</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/CNG.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">Thần t&#224;i Ph&#250; Qu&#253; 999.9</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">16,960,000</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">17,260,000</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/TSPQ.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">Ph&#250; qu&#253; 1 lượng 99.9</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">16,950,000</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">17,250,000</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/TSPQ.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">V&#224;ng trang sức 999.9</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">16,760,000</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">17,160,000</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/TSPQ.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">V&#224;ng trang sức 999</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">16,750,000</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">17,150,000</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/TSPQ.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">V&#224;ng trang sức 99</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">16,592,400</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">16,988,400</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/TSPQ.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">V&#224;ng trang sức 98</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">16,424,800</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">16,816,800</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/TSPQ.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">V&#224;ng 999.9 phi SJC</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">16,000,000</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">---</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>
+
+---ROW---
+
+<tr class="show-tr">
+                            <td width="6%" class="text-center text-white" style="padding: .47rem!important">
+                                <img src="/public/images/product/TSPQ.png" class="img-fluid" />
+                            </td>
+                            <td width="38%" class="text-white fz-1-3em">V&#224;ng 999.0  phi SJC</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em">15,950,000</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em">---</td>
+                            <td width="14%" class="text-center text-buy fz-1-5em buon-col">-</td>
+                            <td width="14%" class="text-center text-sell fz-1-5em buon-col">-</td>
+                        </tr>

@@ -1,0 +1,35 @@
+{
+  "project": {
+    "name": "SaveMoney",
+    "description": "App quản lý chi tiêu cá nhân tương tự Money Lover - Flutter + Firebase",
+    "created_at": "2026-03-27T00:30:00+07:00"
+  },
+  "tech_stack": [
+    "Flutter (Dart)",
+    "Firebase Auth (Google Sign-In)",
+    "Cloud Firestore",
+    "Firebase Storage",
+    "Riverpod",
+    "fl_chart",
+    "Go Router"
+  ],
+  "features": [
+    "Đăng nhập Google",
+    "Quản lý ví (tiền mặt, ngân hàng, ví điện tử)",
+    "Thu / Chi / Chuyển khoản",
+    "Danh mục với icon & màu sắc",
+    "Lịch sử giao dịch",
+    "Ngân sách (Budget)",
+    "Báo cáo biểu đồ ngày/tuần/tháng/năm",
+    "Nhắc nhở hóa đơn định kỳ",
+    "Đa tiền tệ",
+    "Xuất báo cáo PDF/Excel",
+    "Ảnh chứng từ",
+    "Quản lý vay nợ"
+  ],
+  "decisions": [
+    "Dùng Firestore offline persistence thay vì Local DB riêng",
+    "Full clone Money Lover - đủ tính năng",
+    "Dự án cá nhân"
+  ]
+}

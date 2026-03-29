@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "374312847898",
+    "project_id": "savemoney-app-7292",
+    "storage_bucket": "savemoney-app-7292.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374312847898:android:6403d4b9ce9a9fd57f9fa3",
+        "android_client_info": {
+          "package_name": "com.savemoney.savemoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374312847898-sm3lhsi45v72carqpp2mc55qplimm37r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.savemoney.savemoney",
+            "certificate_hash": "c0fa61e4802bc9494844331bda9c68bfe55fb05d"
+          }
+        },
+        {
+          "client_id": "374312847898-ecmndfcnf396r491p80eid74jm141rf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1eOOnMRK8zqjH1GarAv-BvhAaOsptJ5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374312847898-ecmndfcnf396r491p80eid74jm141rf1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "374312847898-ctbjs7svrjs0ls9dalc2ncsr74pakitg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.savemoney.savemoney"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
