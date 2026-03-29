@@ -132,7 +132,7 @@ class _GoldTrackerScreenState extends State<GoldTrackerScreen> {
         ),
       ),
       floatingActionButton: Padding(
-        padding: const EdgeInsets.only(bottom: 72),
+        padding: EdgeInsets.only(bottom: 72 + MediaQuery.paddingOf(context).bottom),
         child: FloatingActionButton(
           onPressed: _openAdd,
           backgroundColor: _kGold,

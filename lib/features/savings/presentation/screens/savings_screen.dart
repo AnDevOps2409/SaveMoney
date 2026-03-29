@@ -167,7 +167,7 @@ class _SavingsScreenState extends ConsumerState<SavingsScreen>
             data: (goals) => goals.isEmpty
                 ? _buildEmpty(context)
                 : ListView.builder(
-                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 100),
+                    padding: EdgeInsets.fromLTRB(16, 8, 16, 120 + MediaQuery.paddingOf(context).bottom),
                     itemCount: goals.length,
                     itemBuilder: (context, i) => Dismissible(
                       key: Key(goals[i].id),
@@ -244,28 +244,31 @@ class _SavingsScreenState extends ConsumerState<SavingsScreen>
   }
 
   Widget _buildEmpty(BuildContext context) => Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset('assets/images/pig_0.png', width: 140, height: 140),
-            const SizedBox(height: 16),
-            const Text('Chưa có mục tiêu tiết kiệm', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: AppColors.textPrimary)),
-            const SizedBox(height: 8),
-            const Text('Tạo mục tiêu đầu tiên của bạn\nđể bắt đầu hành trình tiết kiệm!', textAlign: TextAlign.center, style: TextStyle(color: AppColors.textSecondary)),
-            const SizedBox(height: 24),
-            ElevatedButton.icon(
-              onPressed: () => _showAddGoalSheet(context),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary.withAlpha(25), // 10% opacity
-                foregroundColor: AppColors.primary,
-                elevation: 0,
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+        child: Padding(
+          padding: EdgeInsets.only(bottom: 120 + MediaQuery.paddingOf(context).bottom),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset('assets/images/pig_0.png', width: 140, height: 140),
+              const SizedBox(height: 16),
+              const Text('Chưa có mục tiêu tiết kiệm', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: AppColors.textPrimary)),
+              const SizedBox(height: 8),
+              const Text('Tạo mục tiêu đầu tiên của bạn\nđể bắt đầu hành trình tiết kiệm!', textAlign: TextAlign.center, style: TextStyle(color: AppColors.textSecondary)),
+              const SizedBox(height: 24),
+              ElevatedButton.icon(
+                onPressed: () => _showAddGoalSheet(context),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary.withAlpha(25), // 10% opacity
+                  foregroundColor: AppColors.primary,
+                  elevation: 0,
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+                ),
+                icon: const Icon(Icons.add_circle_outline, size: 20),
+                label: const Text('Thêm mục tiêu', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
               ),
-              icon: const Icon(Icons.add_circle_outline, size: 20),
-              label: const Text('Thêm mục tiêu', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
-            ),
-          ],
+            ],
+          ),
         ),
       );
 
